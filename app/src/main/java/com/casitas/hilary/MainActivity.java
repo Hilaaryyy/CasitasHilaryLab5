@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
             MainActivity.this.startActivity(i);
         }
         else if(v.getId() == R.id.button6){
-            Uri g = Uri.parse("geo:10.267497,, 123.943472");
+            Uri g = Uri.parse("geo:10.267497, 123.943472");
             i = new Intent(Intent.ACTION_VIEW, g);
             chooser = Intent.createChooser(i, "Choose map application");
             startActivity(chooser);
